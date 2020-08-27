@@ -23,8 +23,8 @@ jobs:
     - name: Build with Maven
       run: mvn -B package --file pom.xml
     - name: Test execution
-      run: mvn clean install
-    - name: SonarCloud Scan
+      run: mvn test
+    - name: OWASP ZAP Baseline Scan
       # You may pin to the exact commit or the version.
-      # uses: SonarSource/sonarcloud-github-action@c35654669e40ece974c8835211c2e8ad9c802df0
-      uses: SonarSource/sonarcloud-github-action@v1.3
+      # uses: zaproxy/action-baseline@3f53f375845c0b410cb54dde95f77516fc4fcf4c
+      uses: zaproxy/action-baseline@v0.3.0
