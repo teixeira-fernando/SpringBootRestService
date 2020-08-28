@@ -24,7 +24,3 @@ jobs:
       run: mvn -B package --file pom.xml
     - name: Test execution
       run: mvn test
-    - name: OWASP ZAP Baseline Scan
-      # You may pin to the exact commit or the version.
-      # uses: zaproxy/action-baseline@3f53f375845c0b410cb54dde95f77516fc4fcf4c
-      uses: zaproxy/action-baseline@v0.3.0
